@@ -51,15 +51,15 @@ table.center{
     color:#0A1172;
 }
 
+.showTitle{
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
 #infoButt{
     background-color: transparent;
     outline: none;
     padding:0;
-}
-
-#showTitle{
-    font-weight: bold;
-    font-size: 1.05rem;
 }
 
 #footer{
