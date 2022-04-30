@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Retrieve Grade</title>
+    <link rel="stylesheet" href="./stylesheets/grades.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Retrieve your grade</h1><br />
+
+
+        <form action="https://mumstudents.org/params.php" method="post">
+            <div class="textBoxes">
+                <label for="firstName" id="sname">Student Name:</label>
+                <input type="text" id="fname" name="fname">&emsp;
+                <br>
+                <label for="firstName" id="sid">Student Id:</label>
+                <input type="text" id="stuid" name="sid">
+            </div>
+            <br />
+            <br />
+
+            <div class="botBit">
+
+                <label for="assignment" id="sassign">Assignment for:</label>
+                <select id="assignment" name="assignment">
+                    <option value="select" selected>--Select</option>
+                    <option value="FPP">FPP</option>
+                    <option value="MPP">MPP</option>
+                    <option value="WAP">WAP</option>
+                    <option value="SA">SA</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="Something Else Entierly">Something Else Entierly</option>
+                </select>
+                
+                &emsp;
+                <br>
+                <label id="sintake">Admission intake:</label>
+                <input type="radio" id="spring" name="admissionIntake" value="Spring">
+                <label for="spring">Spring</label>
+                
+                <input type="radio" id="fall" name="admissionIntake" value="Fall">
+                <label for="fall">Fall</label>
+                <br /><br />
+                
+                <div class="sboxx">
+                    <label for="chbox">All information is correct.</label>
+                    <input type="checkbox" id="chbox" name="chbox" value="Correct" required>
+                </div>
+                
+                <br />
+            </div>
+
+            <div class="myform">
+                <input type="submit" value="Get Grade!" id="ssubmit">
+            </div>
+        </form>
+
+        <br /><br />
+    </div>
+</body>
+
+</html>
