@@ -31,7 +31,7 @@ h1 {
     font-size: medium;
 }
 .botBit{
-    display:grid;
+    /* display:grid; */
     text-align: center;
     margin:0 auto;
 }
