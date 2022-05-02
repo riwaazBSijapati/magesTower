@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task List Lab</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="https://mumstudents.org/params.php" method="post">
+        <fieldset>
+          <h2>Task List</h2>
+          <div class="left">
+            <label for="task">Task</label><br>
+            <input type="text" id ="taskField" name="task" size = "16"><br>
+            <button onClick={this.buttonClick.bind(this)} type="add" >Add Tasks</button><br>
+            <button onClick={this.buttonClick.bind(this)} type="clear" >Clear Tasks</button>
+          </div>
+          <div class="right">
+            <p>Task List</p>
+            <textarea rows="8" cols="80"></textarea>
+          </div>
+        </fieldset>
+      </form>
+      </div>
+  </body>
+</html>
