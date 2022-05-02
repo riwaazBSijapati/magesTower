@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Task List Lab</title>
-  </head>
-  <body>
-    <div class="container">
-      <form action="https://mumstudents.org/params.php" method="post">
-        <fieldset>
-          <h2>Task List</h2>
-          <div class="left">
-            <label for="task">Task</label><br>
-            <input type="text" id ="taskField" name="task" size = "16"><br>
-            <button onClick={this.buttonClick.bind(this)} type="add" >Add Tasks</button><br>
-            <button onClick={this.buttonClick.bind(this)} type="clear" >Clear Tasks</button>
-          </div>
-          <div class="right">
-            <p>Task List</p>
-            <textarea rows="8" cols="80"></textarea>
-          </div>
-        </fieldset>
-      </form>
-      </div>
-  </body>
-</html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Task List Application</title>
+		<link href="stylesheets/taskList.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<h2>Task List Application</h2>
+        <div class="form">
+            <form action="http://mumstudents.org/params.php">
+                <div class="container">
+                    <div class="colmn">
+                        <dl>
+                            <dt><label  for="fname">Task</label></dt>
+                            <div >
+                                <input required="required" class="input"  type="text" id="task" name="task" placeholder="" maxlength="16">
+                            </div>
+                        </dl>
+                        <button class="button" type="submit" onclick="addToList();">Add Task</button>
+                        <button class="button" type="submit" onclick="clearList();">Clear Tasks</button>
+                    </div>
+                    <div class="colmn">
+                        <dt><label for="fname">Task List</label></dt>
+                        <textarea id="taskList" name="taskList" rows="6" cols="35" value="">
+                        </textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="./js/taskList.js"></script>
+    </body>
+</html> 
