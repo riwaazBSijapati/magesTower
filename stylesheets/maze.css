@@ -1,8 +1,3 @@
-/*
-CSE 190 M Lab 6 CSS file
-You don't need to download or edit this file.
-*/
-
 h1,
 h2 {
     text-align: center;
@@ -58,11 +53,6 @@ div.boundary.example {
 div.youlose {
     background-color: #ff8888;
 }
-
-/*
-Hack hack hack; these are CSS "sibling selectors" for selecting
-neighboring elements.  Necessary to avoid giving ids to the boundary divs
-*/
 
 #maze div.boundary {
     position: absolute;
