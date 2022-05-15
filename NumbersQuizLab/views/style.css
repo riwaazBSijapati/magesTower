@@ -1,5 +1,5 @@
-#mainDiv {
-    border: 1px solid blue;
+#container {
+    border: 1px dotted blue;
     width: fit-content;
     padding: 17px;
 }
